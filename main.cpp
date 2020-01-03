@@ -7,14 +7,6 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-template <typename T>
-arma::Mat <T> arma_computations (arma::Mat<T> &arma_input1, arma::Mat<T> &arma_input2)
-{
-    arma::Mat <T> arma_output(arma_input1.n_rows, arma_input2.n_cols);
-    arma_output = arma_input1 + arma_input2;
-    return arma_output;
-}
-
 
 template <typename T>
 arma::Mat<T> opencv_to_arma(const cv::Mat_<T> &opencv_mat)
@@ -41,11 +33,9 @@ arma::Mat<T> opencv_to_arma2(const cv::Mat &opencv_mat)
     return arma_mat;
 }
 
-
-
 int main(int argc, char** agrv)
 {
-    cv::Mat inputImage, inputFilter, inputImage2;
+    cv::Mat inputImage, inputFilter;
     cv::Mat grayScaleImage(inputImage.rows, inputImage.cols, CV_8UC1);
     cv::Mat grayScaleFilter(inputFilter.rows, inputFilter.cols, CV_8UC1);
 
@@ -67,96 +57,72 @@ int main(int argc, char** agrv)
     cv::imshow("GrayScale Image", grayScaleImage);
     cv::imshow("GrayScale Filter", grayScaleFilter);
 
-    arma::Mat<double> data1 = arma::randu<arma::Mat<double>>(2, 2);
-    arma::Mat<double> data2 = arma::randu<arma::Mat<double>>(2, 2);
-
-    arma::Mat<double> outputData(data1.n_rows, data1.n_cols);
-    outputData = arma_computations<double>(data1, data2);
-
-    //cv::Mat testData(3, 3, CV_8UC1);
-    //cv::Vec3b pixelColor = grayScaleFilter.at<cv::Vec3b>();
-
-    //std::cout << grayScaleFilter << std::endl;
-    //std::cout << " TestData:\n" << pixelColor << std::endl;
-    //std::cout << data1 << std::endl;
-    //td::cout << " Data1 " << data1(0, 1) << std::endl;
-
-
-    arma::Mat <int> arma_mat(grayScaleFilter.rows, grayScaleFilter.cols);
-    for (int i = 0; i < arma_mat.n_rows; i++)
-    {
-        for (int j = 0; j < arma_mat.n_cols; j++)
-        {
-
-            //cv::Vec3b pixelColor = testData.at<cv::Vec3b>(i);
-            arma_mat(i, j) = (int)grayScaleFilter.at<uchar>(i,j);
-
-        }
-    }
-
-    //std::cout <<arma_mat << std::endl;
-
-/*
-    arma::Mat <int> arma_mat1(inputImage.rows, inputImage.cols);
-    arma::Mat <int> arma_mat2(inputImage.rows, inputImage.cols);
-
-    //outputImage = opencv_to_arma<double>(inputImage);
-    //std::cout << outputImage << std::endl;
-
-    for (int i = 0; i < inputImage.rows; i++)
-    {
-        for (int j = 0; j < inputImage.cols; j++)
-        {
-
-            arma_mat1(i, j) = (int)inputImage.at<uchar>(i,j);
-            arma_mat2(i, j) = (int)inputImage2.at<uchar>(i,j);
-
-        }
-
-    }
-
-
-    arma::Mat <int> arma_output(inputImage.rows, inputImage.cols);
-    arma_output = arma_mat1 + 2;
-    //std::cout << arma_output << std::endl;
-    */
-
-
     // Convert OpenCV to Armadillo
-    arma::Mat<uchar> armaGrayScaleImage(grayScaleImage.rows, grayScaleImage.cols);
-    for (int i = 0; i < armaGrayScaleImage.n_rows; i++)
-    {
-        for (int j = 0; j < armaGrayScaleImage.n_cols; j++)
-        {
+    arma::Mat<double> armaGrayScaleImage(grayScaleImage.rows, grayScaleImage.cols);
+    arma::Mat <double> armaGrayScaleFilter(grayScaleFilter.rows, grayScaleFilter.cols);
 
+    //armaGrayScaleFilter = opencv_to_arma2<double>(grayScaleFilter);
+
+    for (int i = 0; i < grayScaleImage.rows; i++)
+    {
+        for (int j = 0; j < grayScaleImage.cols; j++)
+        {
             //cv::Vec3b pixelColor = testData.at<cv::Vec3b>(i);
-            armaGrayScaleImage(i, j) = grayScaleImage.at<uchar>(i,j);
+            armaGrayScaleImage(i, j) = (double)grayScaleImage.at<uchar>(i, j);
 
         }
     }
 
-    armaGrayScaleImage += 100;
 
-    std::cout<<armaGrayScaleImage<<std::endl;
+    for (int i = 0; i < grayScaleFilter.rows; i++)
+    {
+        for (int j = 0; j < grayScaleFilter.cols; j++)
+        {
+            armaGrayScaleFilter(i, j) = (double)grayScaleFilter.at<uchar>(i, j);
+        }
+
+    }
+
+    armaGrayScaleImage += 50;
+    armaGrayScaleFilter += 50;
+
+
+
+    double value = arma::sqrt(arma::sum(arma::sum(arma::pow(armaGrayScaleFilter, 2), 0), 1)).eval()(0, 0);
+    //std::cout << value << std::endl;
+    armaGrayScaleFilter = armaGrayScaleFilter / value;
+
 
     // convert Armadillo to Opencv
-    cv::Mat finalImage(armaGrayScaleImage.n_rows, armaGrayScaleImage.n_cols, CV_8UC1);
+    cv::Mat image(armaGrayScaleImage.n_rows, armaGrayScaleImage.n_cols, CV_8UC1);
+    cv::Mat filter(armaGrayScaleFilter.n_rows, armaGrayScaleFilter.n_cols, CV_8UC1);
+
     //finalImage = arma_to_opencv<uchar>(arma_mat_filter);
 
 
-    for (int i = 0; i < armaGrayScaleImage.n_rows; ++i)
+    for (int i = 0; i < grayScaleImage.rows; ++i)
     {
-        for (int j = 0; j< armaGrayScaleImage.n_cols; ++j)
+        for (int j = 0; j< grayScaleImage.cols; ++j)
         {
-            finalImage.at<uchar>(i, j) = armaGrayScaleImage(i, j);
+            image.at<uchar>(i, j) = (uchar)armaGrayScaleImage(i, j);
+
         }
 
     }
 
-    imshow("Final Output ", finalImage);
 
+    for (int i = 0; i < grayScaleFilter.rows; ++i)
+    {
+        for (int j = 0; j< grayScaleFilter.cols; ++j)
+        {
+            filter.at<uchar>(i, j) = (uchar)armaGrayScaleFilter(i, j);
 
-    std::cout<<sqrt(sum(sum(pow(armaGrayScaleImage,2),0),0))<<std::endl;
+        }
+
+    }
+
+    imshow("Final Image ", image);
+    imshow("Final Filter", filter);
 
     cv::waitKey();
     return 0;

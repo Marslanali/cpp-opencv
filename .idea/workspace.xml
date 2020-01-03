@@ -67,7 +67,9 @@
       <option name="presentableId" value="Default" />
       <updated>1577897486423</updated>
       <workItem from="1577897488261" duration="920000" />
-      <workItem from="1577982822565" duration="3793000" />
+      <workItem from="1577982822565" duration="4324000" />
+      <workItem from="1577987702823" duration="10000" />
+      <workItem from="1578062859085" duration="1721000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via git, adding template function">
       <created>1577897855526</created>
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577898205154</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixing arma to opencv conversion bugs">
+      <created>1577986702109</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577986702109</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit via git, adding template function" />
     <MESSAGE value="commit via clion git, adding template function" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit via clion git, adding template function" />
+    <MESSAGE value="fixing arma to opencv conversion bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing arma to opencv conversion bugs" />
   </component>
 </project>
