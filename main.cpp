@@ -6,32 +6,27 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <stdio.h>
 
-
-template <typename T>
-arma::Mat<T> opencv_to_arma(const cv::Mat_<T> &opencv_mat)
-{
-    arma::Mat<T> arma_mat(opencv_mat.cols, opencv_mat.rows);
-    opencv_mat.copyTo({ opencv_mat.rows, opencv_mat.cols, arma_mat.memptr() });
-    return arma_mat;
-}
 
 template <typename T>
 arma::Mat<T> opencv_to_arma2(const cv::Mat &opencv_mat)
 {
-    arma::Mat<T> arma_mat(opencv_mat.rows, opencv_mat.cols);
+	arma::Mat<T> arma_mat(opencv_mat.rows, opencv_mat.cols);
 
-    for (int i = 0; i < opencv_mat.rows; ++i)
-    {
-        for (int j = 0; j< opencv_mat.cols; ++j)
-        {
-            arma_mat(i, j) = (T)opencv_mat.at<uchar>(i, j);
-        }
+	for (int i = 0; i < opencv_mat.rows; ++i)
+	{
+		for (int j = 0; j< opencv_mat.cols; ++j)
+		{
+			arma_mat(i, j) = (T)opencv_mat.at<uchar>(i, j);
+		}
 
-    }
+	}
 
-    return arma_mat;
+	return arma_mat;
 }
+
+
 
 int main(int argc, char** agrv)
 {
@@ -42,8 +37,8 @@ int main(int argc, char** agrv)
     inputImage = cv::imread("/home/arslan/Arslan Ali/Arslan_Data/Sanja Fidler/code/lecture2/clutter.png");
     inputFilter = cv::imread("/home/arslan/Arslan Ali/Arslan_Data/Sanja Fidler/code/lecture2/filter13.png");
 
-    cv::imshow("Input Image", inputImage);
-    cv::imshow("Input Filter", inputFilter);
+    //cv::imshow("Input Image", inputImage);
+    //cv::imshow("Input Filter", inputFilter);
 
     if (inputImage.empty() || inputFilter.empty())
     {
@@ -54,12 +49,39 @@ int main(int argc, char** agrv)
     cv::cvtColor(inputImage, grayScaleImage, cv::COLOR_BGR2GRAY);
     cv::cvtColor(inputFilter, grayScaleFilter, cv::COLOR_BGR2GRAY);
 
-    cv::imshow("GrayScale Image", grayScaleImage);
-    cv::imshow("GrayScale Filter", grayScaleFilter);
+    //cv::imshow("GrayScale Image", grayScaleImage);
+    //cv::imshow("GrayScale Filter", grayScaleFilter);
+
+    cv::Mat finalImage(grayScaleImage.rows - grayScaleFilter.rows + 1, grayScaleImage.cols - grayScaleFilter.cols + 1, CV_8UC1);
+    cv::matchTemplate(grayScaleImage, grayScaleFilter, finalImage, 3);
+    cv::normalize(finalImage, finalImage, 0, 1, cv::NORM_MINMAX, -1, cv::Mat());
+
+    /// Localizing the best match with minMaxLoc
+    double minVal, maxVal;
+    cv::Point minLoc, maxLoc, matchLoc;
+
+    minMaxLoc(finalImage, &minVal, &maxVal, &minLoc, &maxLoc, cv::Mat());
+
+    /// For SQDIFF and SQDIFF_NORMED, the best matches are lower values. For all the other methods, the higher the better
+    matchLoc = maxLoc;
+    std::cout << matchLoc << std::endl;
+
+    /// Show me what you got
+    cv::rectangle(inputImage, matchLoc, cv::Point(matchLoc.x + grayScaleFilter.cols, matchLoc.y + grayScaleFilter.rows), cv::Scalar::all(0), 2, 8, 0);
+    cv::rectangle(finalImage, matchLoc, cv::Point(matchLoc.x + grayScaleFilter.cols, matchLoc.y + grayScaleFilter.rows), cv::Scalar::all(0), 2, 8, 0);
+
+
+    cv::imshow("Image_Display2", inputImage);
+    cv::imshow("Result Image2", finalImage);
+
+    cv::imwrite("/home/arslan/CLionProjects/template_matching_opencv/results/output_image.png",inputImage);
+    cv::imwrite("/home/arslan/CLionProjects/template_matching_opencv/results/output_image2.tiff",finalImage);
+
 
     // Convert OpenCV to Armadillo
     arma::Mat<double> armaGrayScaleImage(grayScaleImage.rows, grayScaleImage.cols);
     arma::Mat <double> armaGrayScaleFilter(grayScaleFilter.rows, grayScaleFilter.cols);
+
 
     //armaGrayScaleFilter = opencv_to_arma2<double>(grayScaleFilter);
 
@@ -67,6 +89,7 @@ int main(int argc, char** agrv)
     {
         for (int j = 0; j < grayScaleImage.cols; j++)
         {
+
             //cv::Vec3b pixelColor = testData.at<cv::Vec3b>(i);
             armaGrayScaleImage(i, j) = (double)grayScaleImage.at<uchar>(i, j);
 
@@ -83,8 +106,8 @@ int main(int argc, char** agrv)
 
     }
 
-    armaGrayScaleImage += 50;
-    armaGrayScaleFilter += 50;
+    //armaGrayScaleImage += 50;
+    //armaGrayScaleFilter += 50;
 
 
 
@@ -121,12 +144,18 @@ int main(int argc, char** agrv)
 
     }
 
-    imshow("Final Image ", image);
-    imshow("Final Filter", filter);
+    //imshow("Final Image ", image);
+    //imshow("Final Filter", filter);
+
+
 
     cv::waitKey();
     return 0;
 }
+
+
+
+
 
 
 
