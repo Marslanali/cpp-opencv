@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.15)
-project(linear_filter_opencv)
+project(template_matching_opencv)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(linear_filter_opencv main.cpp)
+add_executable(template_matching_opencv main.cpp src/video_capture_live_camera.cpp)
 
 ## Armadillo & OpenCV packages
 find_package(OpenCV 4.2 REQUIRED)
@@ -17,4 +17,4 @@ find_library(OPENCV_LIBRARIES opencv)
 include_directories(include ${PYTHON_INCLUDE_DIRS} ${ARMADILLO_INCLUDE_DIRS} ${MLPACK_INCLUDE_DIRS} ${OPENCV_INCLUDE_DIRS})
 
 #target link libraries
-target_link_libraries(linear_filter_opencv ${PYTHON_LIBRARIES}  ${ARMADILLO_LIBRARIES} ${OpenCV_LIBRARIES} libmlpack.so )
+target_link_libraries(template_matching_opencv ${PYTHON_LIBRARIES}  ${ARMADILLO_LIBRARIES} ${OpenCV_LIBRARIES} libmlpack.so )
