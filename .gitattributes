@@ -1,2 +1,4 @@
 # to change language of repo from HTMP to C++
-    *.linguist-language=C++
+ *.C++ linguist-detectable=true
+ *.Makefile linguist-detectable=false
+ 
