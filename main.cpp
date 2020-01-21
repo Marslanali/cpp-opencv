@@ -8,7 +8,9 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <stdio.h>
 
-
+/**
+ * template function for converting openCV Mat to Armadillo Mat
+ */
 template <typename T>
 arma::Mat<T> opencv_to_arma2(const cv::Mat &opencv_mat)
 {
