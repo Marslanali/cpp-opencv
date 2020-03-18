@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/arslanali/CLionProjects/template_matching_opencv/main.cpp" "/home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/template_matching_opencv.dir/main.cpp.o"
-  "/home/arslanali/CLionProjects/template_matching_opencv/src/video_capture_live_camera.cpp" "/home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/template_matching_opencv.dir/src/video_capture_live_camera.cpp.o"
+  "/home/arslanali/CLionProjects/template_matching_opencv/src/template_matching.cpp" "/home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/template-matching.dir/src/template_matching.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

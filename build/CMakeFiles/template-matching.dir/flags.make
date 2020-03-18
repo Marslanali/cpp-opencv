@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/arslan/CLionProjects/template_matching_opencv/include -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/arslanali/CLionProjects/template_matching_opencv/include -isystem /usr/local/include/opencv4 
 

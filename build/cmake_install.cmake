@@ -1,4 +1,4 @@
-# Install script for directory: /home/arslan/CLionProjects/template_matching_opencv
+# Install script for directory: /home/arslanali/CLionProjects/template_matching_opencv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/arslan/CLionProjects/template_matching_opencv/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/arslanali/CLionProjects/template_matching_opencv/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

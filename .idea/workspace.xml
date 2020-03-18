@@ -2,7 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="template_matching_opencv" targetName="template_matching_opencv" />
+      <config projectName="template_matching_opencv" targetName="template-matching" />
+      <config projectName="template_matching_opencv" targetName="video-capture-live-camera" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -12,10 +13,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6b95c9c-df79-4573-87c5-e142ea71a207" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/template_matching_opencv" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/template_matching.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/linear_filter_opencv.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/linear_filter_opencv.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/linear_filter_opencv.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/linear_filter_opencv.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/linear_filter_opencv.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/linear_filter_opencv.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/linear_filter_opencv.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/src/video_capture_live_camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template_matching_opencv.dir/src/video_capture_live_camera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/template_matching_opencv.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/build/template_matching_opencv.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,33 +61,36 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="template_matching_opencv" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="template_matching_opencv" TARGET_NAME="template_matching_opencv" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="template_matching_opencv" RUN_TARGET_NAME="template_matching_opencv">
+  <component name="RunManager" selected="CMake Application.video-capture-live-camera">
+    <configuration name="template-matching" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="template_matching_opencv" TARGET_NAME="template-matching" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="template_matching_opencv" RUN_TARGET_NAME="template-matching">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="video-capture-live-camera" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="template_matching_opencv" TARGET_NAME="video-capture-live-camera" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="template_matching_opencv" RUN_TARGET_NAME="video-capture-live-camera">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.template-matching" />
+      <item itemvalue="CMake Application.video-capture-live-camera" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -77,6 +109,7 @@
       <workItem from="1578499223053" duration="534000" />
       <workItem from="1579288883055" duration="651000" />
       <workItem from="1579334358672" duration="496000" />
+      <workItem from="1584569476741" duration="830000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via git, adding template function">
       <created>1577897855526</created>
@@ -148,5 +181,23 @@
     <MESSAGE value="adding additional src files" />
     <MESSAGE value="adding additional files" />
     <option name="LAST_COMMIT_MESSAGE" value="adding additional files" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1324" height="183" key="GridCell.Tab.0.bottom" timestamp="1584570357223">
+      <screen x="0" y="21" width="1366" height="711" />
+    </state>
+    <state width="1324" height="183" key="GridCell.Tab.0.bottom/0.21.1366.711@0.21.1366.711" timestamp="1584570357223" />
+    <state width="1324" height="183" key="GridCell.Tab.0.center" timestamp="1584570357220">
+      <screen x="0" y="21" width="1366" height="711" />
+    </state>
+    <state width="1324" height="183" key="GridCell.Tab.0.center/0.21.1366.711@0.21.1366.711" timestamp="1584570357220" />
+    <state width="1324" height="183" key="GridCell.Tab.0.left" timestamp="1584570357219">
+      <screen x="0" y="21" width="1366" height="711" />
+    </state>
+    <state width="1324" height="183" key="GridCell.Tab.0.left/0.21.1366.711@0.21.1366.711" timestamp="1584570357219" />
+    <state width="1324" height="183" key="GridCell.Tab.0.right" timestamp="1584570357222">
+      <screen x="0" y="21" width="1366" height="711" />
+    </state>
+    <state width="1324" height="183" key="GridCell.Tab.0.right/0.21.1366.711@0.21.1366.711" timestamp="1584570357221" />
   </component>
 </project>

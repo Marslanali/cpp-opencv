@@ -1,4 +1,4 @@
-/opt/clion-2019.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/arslan/CLionProjects/template_matching_opencv
+/opt/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/arslanali/CLionProjects/template_matching_opencv
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/arslan/CLionProjects/template_matching_opencv/build
+-- Build files have been written to: /home/arslanali/CLionProjects/template_matching_opencv/build

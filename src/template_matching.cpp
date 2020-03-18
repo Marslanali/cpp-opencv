@@ -36,8 +36,8 @@ int main(int argc, char** agrv)
     cv::Mat grayScaleImage(inputImage.rows, inputImage.cols, CV_8UC1);
     cv::Mat grayScaleFilter(inputFilter.rows, inputFilter.cols, CV_8UC1);
 
-    inputImage = cv::imread("/home/arslan/Arslan Ali/Arslan_Data/Sanja Fidler/code/lecture2/clutter.png");
-    inputFilter = cv::imread("/home/arslan/Arslan Ali/Arslan_Data/Sanja Fidler/code/lecture2/filter13.png");
+    inputImage = cv::imread("/home/arslanali/Arslan Ali/arslan-data/open-source-projects/Sanja Fidler/code/lecture2/clutter.png");
+    inputFilter = cv::imread("/home/arslanali/Arslan Ali/arslan-data/open-source-projects/Sanja Fidler/code/lecture2/filter13.png");
 
     //cv::imshow("Input Image", inputImage);
     //cv::imshow("Input Filter", inputFilter);
@@ -76,8 +76,8 @@ int main(int argc, char** agrv)
     cv::imshow("Image_Display2", inputImage);
     cv::imshow("Result Image2", finalImage);
 
-    cv::imwrite("/home/arslan/CLionProjects/template_matching_opencv/results/output_image.png",inputImage);
-    cv::imwrite("/home/arslan/CLionProjects/template_matching_opencv/results/output_image2.tiff",finalImage);
+    cv::imwrite("../results/output_image.png",inputImage);
+    cv::imwrite("../results/output_image2.tiff",finalImage);
 
 
     // Convert OpenCV to Armadillo

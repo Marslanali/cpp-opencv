@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/arslanali/CLionProjects/template_matching_opencv/main.cpp
-iostream
--
-armadillo
--
-opencv2/core.hpp
--
-opencv2/imgcodecs.hpp
--
-opencv2/highgui.hpp
--
-opencv2/imgproc/imgproc.hpp
--
-stdio.h
--
-
 /home/arslanali/CLionProjects/template_matching_opencv/src/video_capture_live_camera.cpp
 opencv2/highgui/highgui.hpp
 /home/arslanali/CLionProjects/template_matching_opencv/src/opencv2/highgui/highgui.hpp
@@ -873,10 +857,6 @@ opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/imgproc.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
-
-/usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
-opencv2/imgproc.hpp
-/usr/local/include/opencv4/opencv2/imgproc/opencv2/imgproc.hpp
 
 /usr/local/include/opencv4/opencv2/ml.hpp
 opencv2/core.hpp
