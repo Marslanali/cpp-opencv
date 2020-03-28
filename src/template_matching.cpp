@@ -76,8 +76,8 @@ int main(int argc, char** agrv)
     cv::imshow("Image_Display2", input_image);
     cv::imshow("Result Image2", final_image);
 
-    cv::imwrite("../results/output_image.png",input_image);
-    cv::imwrite("../results/output_image2.tiff",final_image);
+    cv::imwrite("../results/template_matching/output_image.png",input_image);
+    cv::imwrite("../results/template_matching/output_image2.tiff",final_image);
 
 
     // Convert OpenCV to Armadillo

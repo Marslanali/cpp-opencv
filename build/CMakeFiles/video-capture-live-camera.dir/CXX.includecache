@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/arslanali/CLionProjects/template_matching_opencv/src/video_capture_live_camera.cpp
+/home/arslanali/CLionProjects/cpp-opencv/src/video_capture_live_camera.cpp
 opencv2/highgui/highgui.hpp
-/home/arslanali/CLionProjects/template_matching_opencv/src/opencv2/highgui/highgui.hpp
+/home/arslanali/CLionProjects/cpp-opencv/src/opencv2/highgui/highgui.hpp
 opencv2/opencv.hpp
-/home/arslanali/CLionProjects/template_matching_opencv/src/opencv2/opencv.hpp
+/home/arslanali/CLionProjects/cpp-opencv/src/opencv2/opencv.hpp
 iostream
 -
 

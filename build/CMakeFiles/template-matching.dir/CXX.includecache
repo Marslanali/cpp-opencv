@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/arslanali/CLionProjects/template_matching_opencv/src/template_matching.cpp
+/home/arslanali/CLionProjects/cpp-opencv/src/template_matching.cpp
 iostream
 -
 armadillo
