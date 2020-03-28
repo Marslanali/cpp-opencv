@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/template-matching.dir/src/template_matching.cpp.o"
-  "template-matching.pdb"
   "template-matching"
+  "template-matching.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

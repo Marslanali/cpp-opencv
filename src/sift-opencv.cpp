@@ -1,0 +1,22 @@
+//
+// Created by arslanali on 29/3/20.
+//
+
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/features2d.hpp> //Thanks to Alessandro
+
+int main(int argc, const char* argv[])
+{
+    const cv::Mat input = cv::imread("input.jpg", 0); //Load as grayscale
+    cv::Ptr<cv::SiftFeatureDetector> detector = cv::SiftFeatureDetector::create();
+    std::vector<cv::KeyPoint> keypoints;
+    detector->detect(input, keypoints);
+
+    // Add results to image and save.
+    cv::Mat output;
+    cv::drawKeypoints(input, keypoints, output);
+    cv::imwrite("sift_result.jpg", output);
+
+    return 0;
+}
