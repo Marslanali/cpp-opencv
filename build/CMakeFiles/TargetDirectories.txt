@@ -1,4 +1,4 @@
-/home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/rebuild_cache.dir
 /home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/edit_cache.dir
-/home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/template-matching.dir
+/home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/rebuild_cache.dir
 /home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/video-capture-live-camera.dir
+/home/arslanali/CLionProjects/template_matching_opencv/build/CMakeFiles/template-matching.dir

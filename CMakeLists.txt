@@ -1,11 +1,14 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.5.1)
 project(template_matching_opencv)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(template-matching ${PROJECT_SOURCE_DIR}/src/template_matching.cpp)
+add_executable(template-matching
+        ${PROJECT_SOURCE_DIR}/src/template_matching.cpp)
 
-add_executable(video-capture-live-camera ${PROJECT_SOURCE_DIR}/src/video_capture_live_camera.cpp)
+add_executable(video-capture-live-camera
+        ${PROJECT_SOURCE_DIR}/src/video_capture_live_camera.cpp )
+
 
 ## Armadillo & OpenCV packages
 find_package(OpenCV 4.2 REQUIRED)
@@ -23,3 +26,4 @@ target_link_libraries(template-matching ${PYTHON_LIBRARIES}  ${ARMADILLO_LIBRARI
 
 #target link libraries
 target_link_libraries(video-capture-live-camera ${PYTHON_LIBRARIES}  ${ARMADILLO_LIBRARIES} ${OpenCV_LIBRARIES} libmlpack.so )
+
