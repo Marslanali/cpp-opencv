@@ -1,5 +1,9 @@
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/edit_cache.dir
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/rebuild_cache.dir
-/home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/sift-opencv.dir
+/home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/goodFeaturesToTrack_Demo.dir
+/home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/cornerHarris_Demo.dir
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/template-matching.dir
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/video-capture-live-camera.dir
+/home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/cornerSubPix_Demo.dir
+/home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/sift-opencv.dir
+/home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/cornerDetector_Demo.dir

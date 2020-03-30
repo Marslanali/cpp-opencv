@@ -9,8 +9,22 @@ add_executable(template-matching
 add_executable(video-capture-live-camera
         ${PROJECT_SOURCE_DIR}/src/video_capture_live_camera.cpp )
 
-add_executable(sift-opencv
-        ${PROJECT_SOURCE_DIR}/src/sift-opencv.cpp )
+add_executable(sift-opencv 
+	${PROJECT_SOURCE_DIR}/src/sift-opencv.cpp  )
+
+add_executable(cornerDetector_Demo
+	${PROJECT_SOURCE_DIR}/src/TrackingMotion/cornerDetector_Demo.cpp )
+
+add_executable(cornerHarris_Demo
+	${PROJECT_SOURCE_DIR}/src/TrackingMotion/cornerHarris_Demo.cpp)
+
+add_executable(cornerSubPix_Demo
+	${PROJECT_SOURCE_DIR}/src/TrackingMotion/cornerSubPix_Demo.cpp)
+
+add_executable(goodFeaturesToTrack_Demo
+	${PROJECT_SOURCE_DIR}/src/TrackingMotion/goodFeaturesToTrack_Demo.cpp)
+
+
 ## Armadillo & OpenCV packages
 find_package(OpenCV 4.2.0 REQUIRED)
 find_package(Armadillo 5.2.0 REQUIRED)
@@ -25,8 +39,21 @@ include_directories(include ${PYTHON_INCLUDE_DIRS} ${ARMADILLO_INCLUDE_DIRS} ${M
 #target link libraries
 target_link_libraries(template-matching ${PYTHON_LIBRARIES}  ${ARMADILLO_LIBRARIES} ${OpenCV_LIBRARIES} libmlpack.so )
 
+#target link libraries
 target_link_libraries(sift-opencv ${OpenCV_LIBRARIES} )
 
 #target link libraries
-target_link_libraries(video-capture-live-camera ${PYTHON_LIBRARIES}  ${ARMADILLO_LIBRARIES} ${OpenCV_LIBRARIES} libmlpack.so )
+target_link_libraries(video-capture-live-camera ${OpenCV_LIBRARIES} )
+
+#target link libraries
+target_link_libraries(cornerHarris_Demo ${OpenCV_LIBRARIES} )
+
+#target link libraries
+target_link_libraries(cornerDetector_Demo ${OpenCV_LIBRARIES} )
+
+#target link libraries
+target_link_libraries(cornerSubPix_Demo ${OpenCV_LIBRARIES} )
+
+#target link libraries
+target_link_libraries(goodFeaturesToTrack_Demo ${OpenCV_LIBRARIES} )
 
