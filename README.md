@@ -1,6 +1,5 @@
 # open-cv-algorithms
-This repository contains various algorithms including i.e. SIFT, template matching implemented in C++ using OpenCV.
-
+SIFT,template matching in C++ using OpenCV.
 
 
 ## How to build OpenCV with extra modules
