@@ -2,12 +2,13 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="template_matching_opencv" targetName="video-capture-live-camera" />
-      <config projectName="template_matching_opencv" targetName="goodFeaturesToTrack_Demo" />
       <config projectName="template_matching_opencv" targetName="sift-opencv" />
+      <config projectName="template_matching_opencv" targetName="birdeyeview_Demo" />
       <config projectName="template_matching_opencv" targetName="cornerDetector_Demo" />
-      <config projectName="template_matching_opencv" targetName="template-matching" />
+      <config projectName="template_matching_opencv" targetName="goodFeaturesToTrack_Demo" />
       <config projectName="template_matching_opencv" targetName="cornerSubPix_Demo" />
+      <config projectName="template_matching_opencv" targetName="template-matching" />
+      <config projectName="template_matching_opencv" targetName="video-capture-live-camera" />
       <config projectName="template_matching_opencv" targetName="cornerHarris_Demo" />
     </generated>
   </component>
@@ -18,69 +19,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6b95c9c-df79-4573-87c5-e142ea71a207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/results/sift/sift_result.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TrackingMotion/cornerDetector_Demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TrackingMotion/cornerHarris_Demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TrackingMotion/cornerSubPix_Demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TrackingMotion/goodFeaturesToTrack_Demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/AKAZE_match.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/AKAZE_tracking/planar_tracking.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/AKAZE_tracking/stats.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/AKAZE_tracking/utils.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/Homography/decompose_homography.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/Homography/homography_from_camera_displacement.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/Homography/panorama_stitching_rotating_camera.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/Homography/perspective_correction.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/Homography/pose_from_homography.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/feature_description/SURF_matching_Demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/feature_detection/SURF_detection_Demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/feature_flann_matcher/SURF_FLANN_matching_Demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features2D/feature_homography/SURF_FLANN_matching_homography_Demo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/example_19-01.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cornerDetector_Demo.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/cornerDetector_Demo.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cornerHarris_Demo.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/cornerHarris_Demo.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cornerSubPix_Demo.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/cornerSubPix_Demo.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/goodFeaturesToTrack_Demo.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/goodFeaturesToTrack_Demo.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sift-opencv.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/src/template_matching.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/src/template_matching.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/src/video_capture_live_camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/video-capture-live-camera.dir/src/video_capture_live_camera.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/template-matching" beforeDir="false" afterPath="$PROJECT_DIR$/build/template-matching" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/template_matching_opencv.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/build/template_matching_opencv.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/video-capture-live-camera" beforeDir="false" afterPath="$PROJECT_DIR$/build/video-capture-live-camera" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sift-opencv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sift-opencv.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Arslan Ali/arslan-data/coursera/algorithm-data-structurs/course1-alogrithm-toolbox/algorithm-toolbox-coursera" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,6 +74,11 @@
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunManager" selected="CMake Application.sift-opencv">
+    <configuration name="birdeyeview_Demo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="template_matching_opencv" TARGET_NAME="birdeyeview_Demo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="template_matching_opencv" RUN_TARGET_NAME="birdeyeview_Demo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="cornerDetector_Demo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="template_matching_opencv" TARGET_NAME="cornerDetector_Demo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="template_matching_opencv" RUN_TARGET_NAME="cornerDetector_Demo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -156,6 +115,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application.birdeyeview_Demo" />
       <item itemvalue="CMake Application.cornerDetector_Demo" />
       <item itemvalue="CMake Application.cornerHarris_Demo" />
       <item itemvalue="CMake Application.cornerSubPix_Demo" />
@@ -186,6 +146,7 @@
       <workItem from="1585407005347" duration="598000" />
       <workItem from="1585427177394" duration="7784000" />
       <workItem from="1585487156325" duration="952000" />
+      <workItem from="1587750545901" duration="2198000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via git, adding template function">
       <created>1577897855526</created>
@@ -267,29 +228,37 @@
       <screen x="0" y="21" width="1366" height="747" />
     </state>
     <state x="470" y="121" width="424" height="479" key="FileChooserDialogImpl/0.21.1366.747/1366.0.1600.900@0.21.1366.747" timestamp="1585488109782" />
-    <state width="1324" height="182" key="GridCell.Tab.0.bottom" timestamp="1585438919776">
-      <screen x="0" y="21" width="1366" height="747" />
+    <state width="1320" height="178" key="GridCell.Tab.0.bottom" timestamp="1587750660761">
+      <screen x="0" y="24" width="1366" height="703" />
     </state>
     <state width="1324" height="183" key="GridCell.Tab.0.bottom/0.21.1366.711@0.21.1366.711" timestamp="1584570357223" />
     <state width="1324" height="182" key="GridCell.Tab.0.bottom/0.21.1366.747/1366.0.1600.900@0.21.1366.747" timestamp="1585438919776" />
     <state width="1558" height="223" key="GridCell.Tab.0.bottom/0.21.1366.747/1366.0.1600.900@1366.0.1600.900" timestamp="1585407658312" />
-    <state width="1324" height="182" key="GridCell.Tab.0.center" timestamp="1585438919775">
-      <screen x="0" y="21" width="1366" height="747" />
+    <state width="1320" height="178" key="GridCell.Tab.0.bottom/0.24.1366.703@0.24.1366.703" timestamp="1587750660761" />
+    <state width="1320" height="178" key="GridCell.Tab.0.center" timestamp="1587750660758">
+      <screen x="0" y="24" width="1366" height="703" />
     </state>
     <state width="1324" height="183" key="GridCell.Tab.0.center/0.21.1366.711@0.21.1366.711" timestamp="1584570357220" />
     <state width="1324" height="182" key="GridCell.Tab.0.center/0.21.1366.747/1366.0.1600.900@0.21.1366.747" timestamp="1585438919775" />
     <state width="1558" height="223" key="GridCell.Tab.0.center/0.21.1366.747/1366.0.1600.900@1366.0.1600.900" timestamp="1585407658311" />
-    <state width="1324" height="182" key="GridCell.Tab.0.left" timestamp="1585438919775">
-      <screen x="0" y="21" width="1366" height="747" />
+    <state width="1320" height="178" key="GridCell.Tab.0.center/0.24.1366.703@0.24.1366.703" timestamp="1587750660758" />
+    <state width="1320" height="178" key="GridCell.Tab.0.left" timestamp="1587750660756">
+      <screen x="0" y="24" width="1366" height="703" />
     </state>
     <state width="1324" height="183" key="GridCell.Tab.0.left/0.21.1366.711@0.21.1366.711" timestamp="1584570357219" />
     <state width="1324" height="182" key="GridCell.Tab.0.left/0.21.1366.747/1366.0.1600.900@0.21.1366.747" timestamp="1585438919775" />
     <state width="1558" height="223" key="GridCell.Tab.0.left/0.21.1366.747/1366.0.1600.900@1366.0.1600.900" timestamp="1585407658311" />
-    <state width="1324" height="182" key="GridCell.Tab.0.right" timestamp="1585438919775">
-      <screen x="0" y="21" width="1366" height="747" />
+    <state width="1320" height="178" key="GridCell.Tab.0.left/0.24.1366.703@0.24.1366.703" timestamp="1587750660756" />
+    <state width="1320" height="178" key="GridCell.Tab.0.right" timestamp="1587750660759">
+      <screen x="0" y="24" width="1366" height="703" />
     </state>
     <state width="1324" height="183" key="GridCell.Tab.0.right/0.21.1366.711@0.21.1366.711" timestamp="1584570357221" />
     <state width="1324" height="182" key="GridCell.Tab.0.right/0.21.1366.747/1366.0.1600.900@0.21.1366.747" timestamp="1585438919775" />
     <state width="1558" height="223" key="GridCell.Tab.0.right/0.21.1366.747/1366.0.1600.900@1366.0.1600.900" timestamp="1585407658312" />
+    <state width="1320" height="178" key="GridCell.Tab.0.right/0.24.1366.703@0.24.1366.703" timestamp="1587750660759" />
+    <state x="347" y="158" key="run.anything.popup" timestamp="1587752088691">
+      <screen x="0" y="24" width="1366" height="703" />
+    </state>
+    <state x="347" y="158" key="run.anything.popup/0.24.1366.703@0.24.1366.703" timestamp="1587752088691" />
   </component>
 </project>

@@ -49,6 +49,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/birdeyeview_Demo.dir/DependInfo.cmake"
   "CMakeFiles/goodFeaturesToTrack_Demo.dir/DependInfo.cmake"
   "CMakeFiles/cornerHarris_Demo.dir/DependInfo.cmake"
   "CMakeFiles/template-matching.dir/DependInfo.cmake"

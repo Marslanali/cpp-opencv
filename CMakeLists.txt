@@ -24,6 +24,9 @@ add_executable(cornerSubPix_Demo
 add_executable(goodFeaturesToTrack_Demo
 	${PROJECT_SOURCE_DIR}/src/TrackingMotion/goodFeaturesToTrack_Demo.cpp)
 
+add_executable(birdeyeview_Demo
+		${PROJECT_SOURCE_DIR}/src/example_19-01.cpp)
+
 
 ## Armadillo & OpenCV packages
 find_package(OpenCV 4.2.0 REQUIRED)
@@ -56,4 +59,8 @@ target_link_libraries(cornerSubPix_Demo ${OpenCV_LIBRARIES} )
 
 #target link libraries
 target_link_libraries(goodFeaturesToTrack_Demo ${OpenCV_LIBRARIES} )
+
+
+#target link libraries
+target_link_libraries(birdeyeview_Demo ${OpenCV_LIBRARIES} )
 

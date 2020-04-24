@@ -1,5 +1,6 @@
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/edit_cache.dir
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/rebuild_cache.dir
+/home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/birdeyeview_Demo.dir
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/goodFeaturesToTrack_Demo.dir
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/cornerHarris_Demo.dir
 /home/arslanali/CLionProjects/cpp-opencv/build/CMakeFiles/template-matching.dir
