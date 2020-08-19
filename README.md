@@ -1,6 +1,4 @@
-# open-cv-algorithms
-SIFT,template matching in C++ using OpenCV.
-
+# open-cv
 
 ## How to build OpenCV with extra modules
 
