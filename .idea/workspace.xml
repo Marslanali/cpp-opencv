@@ -13,22 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d6b95c9c-df79-4573-87c5-e142ea71a207" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.15.3/CompilerIdCXX/a.out" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/clion-log.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/CXX.includecache" afterDir="false" />
@@ -44,9 +33,11 @@
       <change afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/template-matching" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/template_matching_opencv.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/clutter2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/waldo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/template_matching2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template_matching.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/template_matching.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +109,8 @@
       <workItem from="1604152924754" duration="266000" />
       <workItem from="1604443097031" duration="1671000" />
       <workItem from="1604482798012" duration="1673000" />
-      <workItem from="1604495522883" duration="3990000" />
+      <workItem from="1604495522883" duration="4182000" />
+      <workItem from="1604515524484" duration="967000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via git, adding template function">
       <created>1577897855526</created>
@@ -192,21 +184,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="adding additional files" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1283" height="186" key="GridCell.Tab.0.bottom" timestamp="1604509711505">
+    <state width="1283" height="178" key="GridCell.Tab.0.bottom" timestamp="1604516491573">
       <screen x="41" y="21" width="1325" height="747" />
     </state>
-    <state width="1283" height="186" key="GridCell.Tab.0.bottom/41.21.1325.747@41.21.1325.747" timestamp="1604509711505" />
-    <state width="1283" height="186" key="GridCell.Tab.0.center" timestamp="1604509711503">
+    <state width="1283" height="178" key="GridCell.Tab.0.bottom/41.21.1325.747@41.21.1325.747" timestamp="1604516491573" />
+    <state width="1283" height="178" key="GridCell.Tab.0.center" timestamp="1604516491572">
       <screen x="41" y="21" width="1325" height="747" />
     </state>
-    <state width="1283" height="186" key="GridCell.Tab.0.center/41.21.1325.747@41.21.1325.747" timestamp="1604509711503" />
-    <state width="1283" height="186" key="GridCell.Tab.0.left" timestamp="1604509711501">
+    <state width="1283" height="178" key="GridCell.Tab.0.center/41.21.1325.747@41.21.1325.747" timestamp="1604516491572" />
+    <state width="1283" height="178" key="GridCell.Tab.0.left" timestamp="1604516491572">
       <screen x="41" y="21" width="1325" height="747" />
     </state>
-    <state width="1283" height="186" key="GridCell.Tab.0.left/41.21.1325.747@41.21.1325.747" timestamp="1604509711501" />
-    <state width="1283" height="186" key="GridCell.Tab.0.right" timestamp="1604509711504">
+    <state width="1283" height="178" key="GridCell.Tab.0.left/41.21.1325.747@41.21.1325.747" timestamp="1604516491572" />
+    <state width="1283" height="178" key="GridCell.Tab.0.right" timestamp="1604516491572">
       <screen x="41" y="21" width="1325" height="747" />
     </state>
-    <state width="1283" height="186" key="GridCell.Tab.0.right/41.21.1325.747@41.21.1325.747" timestamp="1604509711504" />
+    <state width="1283" height="178" key="GridCell.Tab.0.right/41.21.1325.747@41.21.1325.747" timestamp="1604516491572" />
   </component>
 </project>

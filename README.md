@@ -99,14 +99,14 @@ cmake -DALLOW_FLEXIBLAS_LINUX=ON .
 To build run the following command in terminal:
 
 ```bash
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make -j4 
+mkdir build
+cd build
+cmake ..
+make -j4 
 ```
 
 ```bash
-$ ./kmean --mean 1000 --sigma 500 --distance 200
+$ ./template_matching
 ```
 
 ## References
@@ -115,7 +115,6 @@ $ ./kmean --mean 1000 --sigma 500 --distance 200
 
 ## To-Do List
 
-- :ballot_box_with_check: Refactor src/include
 - :ballot_box_with_check: Refactor src/include
 - :negative_squared_cross_mark: Add CMake Cross Platform Support
 - :negative_squared_cross_mark: Add Docker Image Support 
