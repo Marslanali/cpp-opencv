@@ -1,6 +1,6 @@
-# CPP Tempalte Matching
+# CPP Template Matching
 
-This repositroy is C++ implementation of Tempalte Matching with OpenCV. A working demo video can be seen <a href="https://www.youtube.com/watch?v=z4NieT0z1oo&t=67s">here</a>
+This repository is C++ implementation of Template Matching with OpenCV. A working demo video can be seen <a href="https://www.youtube.com/watch?v=z4NieT0z1oo&t=67s">here</a>
 
 ## Files
 
