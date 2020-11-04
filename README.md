@@ -1,14 +1,12 @@
 # CPP Template Matching
 
-This repository is C++ implementation of Template Matching with OpenCV. A working demo video can be seen <a href="https://www.youtube.com/watch?v=z4NieT0z1oo&t=67s">here</a>
+This repository is C++ implementation of Template Matching with OpenCV. A working demo video can be seen <a href="https://www.youtube.com/watch?v=z4NieT0z1oo&t=67s">here</a>.
 
 ## Files
 
 ```
 .
 ├── src
-├── include
-├── test
 ├── img
 ├── CMakeList.txt
 ├── .clang-format
@@ -54,12 +52,6 @@ unzip opencv_contrib.zip
 Create build directory and switch into it, Configure, and Build.
 
 ```bash
-mkdir -p build && cd build
-cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules ../opencv-master
-cmake --build .
-```
-
-```bash
 sudo apt-get install qtbase5-dev
 mkdir -p build && cd build
 cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules ../opencv-master
@@ -69,6 +61,22 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules ../opencv-mas
 sudo make install
 ```
 
+-- Note!
+
+To uninstall OpenCV, after install from source.
+
+```
+sudo apt-get purge libopencv*
+sudo dpkg -r opencv
+```
+
+Check
+
+```
+sudo dpkg -r opencv
+```
+
+Then, go to the build directory and `sudo make uninstall`. 
 
 * [Armadillo](http://arma.sourceforge.net/download.html)  Version 10.1.1 
 
