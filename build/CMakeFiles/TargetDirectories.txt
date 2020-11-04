@@ -1,3 +1,0 @@
-/home/arslan/repositories/cpp-template-matching/build/CMakeFiles/rebuild_cache.dir
-/home/arslan/repositories/cpp-template-matching/build/CMakeFiles/template-matching.dir
-/home/arslan/repositories/cpp-template-matching/build/CMakeFiles/edit_cache.dir
