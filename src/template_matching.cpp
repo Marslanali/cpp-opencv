@@ -36,8 +36,8 @@ int main(int argc, char** agrv)
     cv::Mat gray_scale_image(input_image.rows, input_image.cols, CV_8UC1);
     cv::Mat gray_scale_filter(input_filter.rows, input_filter.cols, CV_8UC1);
 
-    input_image = cv::imread("/home/arslanali/Arslan Ali/arslan-data/open-source-projects/Sanja Fidler/code/lecture2/clutter.png");
-    input_filter = cv::imread("/home/arslanali/Arslan Ali/arslan-data/open-source-projects/Sanja Fidler/code/lecture2/filter13.png");
+    input_image = cv::imread("../img/clutter.png");
+    input_filter = cv::imread("../img/waldo.png");
 
     //cv::imshow("Input Image", input_image);
     //cv::imshow("Input Filter", input_filter);
@@ -51,10 +51,10 @@ int main(int argc, char** agrv)
     cv::cvtColor(input_image, gray_scale_image, cv::COLOR_BGR2GRAY);
     cv::cvtColor(input_filter, gray_scale_filter, cv::COLOR_BGR2GRAY);
 
-    //cv::imshow("GrayScale Image", gray_scale_image);
-    //cv::imshow("GrayScale Filter", gray_scale_filter);
+    cv::imshow("GrayScale Image", gray_scale_image);
+    cv::imshow("GrayScale Filter", gray_scale_filter);
 
-    cv::Mat final_image(gray_scale_image.rows - gray_scale_filter.rows + 1, gray_scale_image.cols - gray_scale_filter.cols + 1, CV_8UC1);
+ /*   cv::Mat final_image(gray_scale_image.rows - gray_scale_filter.rows + 1, gray_scale_image.cols - gray_scale_filter.cols + 1, CV_8UC1);
     cv::matchTemplate(gray_scale_image, gray_scale_filter, final_image, 3);
     cv::normalize(final_image, final_image, 0, 1, cv::NORM_MINMAX, -1, cv::Mat());
 
@@ -76,8 +76,8 @@ int main(int argc, char** agrv)
     cv::imshow("Image_Display2", input_image);
     cv::imshow("Result Image2", final_image);
 
-    cv::imwrite("../results/template_matching/output_image.png",input_image);
-    cv::imwrite("../results/template_matching/output_image2.tiff",final_image);
+    cv::imwrite("../img/clutter2.png",input_image);
+    cv::imwrite("../img/waldo2.png",final_image);
 
 
     // Convert OpenCV to Armadillo
@@ -148,7 +148,7 @@ int main(int argc, char** agrv)
 
     //imshow("Final Image ", image);
     //imshow("Final Filter", filter);
-
+*/
 
 
     cv::waitKey();

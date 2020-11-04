@@ -1,17 +1,116 @@
-# open-cv tempalte matching in c++
+# CPP Tempalte Matching
 
-A working demo video can be seen <a href="https://www.youtube.com/watch?v=z4NieT0z1oo&t=67s">here</a>
+This repositroy is C++ implementation of Tempalte Matching with OpenCV. A working demo video can be seen <a href="https://www.youtube.com/watch?v=z4NieT0z1oo&t=67s">here</a>
 
-## How to build OpenCV with extra modules
+## Files
 
-You can build OpenCV, so it will include the modules from this repository. Contrib modules are under constant development and it is recommended to use them alongside the master branch or latest releases of OpenCV.
+```
+.
+├── src
+├── include
+├── test
+├── img
+├── CMakeList.txt
+├── .clang-format
+└── README.md
+```
+## Dependencies
 
-Here is the CMake command for you:
+* [CMake](https://www.mlpack.org/)   Version 3.17.5
 
-`cd <opencv_build_directory>`
-`cmake -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules <opencv_source_directory>`
-`make -j5`
+* [OpenCV](https://www.mlpack.org/)  Version 3.17.5
 
-For example
+* [Armadillo](http://arma.sourceforge.net/download.html) Version 10.1.1   
 
-`cmake -DOPENCV_EXTRA_MODULES_PATH=/home/arslanali/Downloads/opencv_contrib/modules /home/arslanali/Downloads/opencv-4.2.0`
+## Dependencies Installation
+
+* [CMake](https://www.mlpack.org/)   Version 3.17.5
+
+Install [CMake](https://www.mlpack.org/) from source. 
+
+```bash
+sudo apt-get install -y -q wget
+wget https://cmake.org/files/v3.17/cmake-3.17.5.tar.gz 
+tar xzf cmake-3.17.5.tar.gz 
+cd cmake-3.17.5 
+./bootstrap -- -DCMAKE_BUILD_TYPE:STRING=Release 
+make -j4 # where j is the number of core
+sudo make install
+```
+
+* [OpenCV](https://www.mlpack.org/)   Version 3.17.5
+
+Install [OpenCV](https://www.mlpack.org/) from source. 
+
+
+```bash
+sudo apt update && sudo apt install -y g++ unzip
+wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/master.zip
+unzip opencv.zip
+unzip opencv_contrib.zip
+```
+
+Create build directory and switch into it, Configure, and Build.
+
+```bash
+mkdir -p build && cd build
+cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules ../opencv-master
+cmake --build .
+```
+
+```bash
+sudo apt-get install qtbase5-dev
+mkdir -p build && cd build
+cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules ../opencv-master
+      -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=/usr/local -DFORCE_VTK=ON 
+      -DWITH_TBB=ON -DWITH_V4L=ON -DWITH_QT=ON -DWITH_OPENGL=ON -DWITH_CUBLAS=ON 
+      -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES" -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON ..
+sudo make install
+```
+
+
+* [Armadillo](http://arma.sourceforge.net/download.html)  Version 10.1.1 
+
+```bash
+sudo apt-get install liblapack-dev
+wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+cd armadillo
+cmake .  # NOTE: the full stop separated from "cmake" by a space is important.
+sudo make install
+```
+
+On Linux, to enable the detection of FlexiBLAS, use the additional ALLOW_FLEXIBLAS_LINUX option when running cmake:
+
+```
+cmake -DALLOW_FLEXIBLAS_LINUX=ON .
+```
+
+## Demo
+
+To build run the following command in terminal:
+
+```bash
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make -j4 
+```
+
+```bash
+$ ./kmean --mean 1000 --sigma 500 --distance 200
+```
+
+## References
+
+[Template Matching](https://www.researchgate.net/publication/308020680_The_k-means_clustering_technique_General_considerations_and_implementation_in_Mathematica/link/584dd9be08aeb989252647ac/download)
+
+## To-Do List
+
+- :ballot_box_with_check: Refactor src/include
+- :ballot_box_with_check: Refactor src/include
+- :negative_squared_cross_mark: Add CMake Cross Platform Support
+- :negative_squared_cross_mark: Add Docker Image Support 
+
+
+

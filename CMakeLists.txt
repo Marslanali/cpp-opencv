@@ -1,21 +1,20 @@
+############################################################
+# Find CMake, Compiler Version, and OS
+############################################################
 cmake_minimum_required(VERSION 3.5.1)
 project(template_matching_opencv)
 set(CMAKE_CXX_STANDARD 11)
 
-############################################################
-# Find CMake, Compiler Version, and OS
-############################################################
-
 message(STATUS "CMake version   : " ${CMAKE_SYSTEM_VERSION})
 message(STATUS "Compiler        : " ${CMAKE_CXX_COMPILER})
 message(STATUS "Operating System: " ${CMAKE_SYSTEM})
-
+message(STATUS "SYSTEM PROCESSOR: " ${CMAKE_SYSTEM_PROCESSOR})
 
 ############################################################
 # Find Armadillo and OpenCV packages
 ############################################################
  
-find_package(OpenCV 4.2.0 REQUIRED)
+find_package(OpenCV  REQUIRED)
 find_package(Armadillo 5.2.0 REQUIRED)
 
 ############################################################
