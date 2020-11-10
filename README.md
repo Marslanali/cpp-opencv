@@ -112,6 +112,7 @@ $ ./template_matching
 ## References
 
 [Template Matching1](http://www.cs.toronto.edu/~fidler/slides/2019/CSC420/lecture2.pdf)
+
 [Template Matching2](https://docs.opencv.org/3.4/de/da9/tutorial_template_matching.html)
 
 

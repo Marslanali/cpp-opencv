@@ -12,15 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6b95c9c-df79-4573-87c5-e142ea71a207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Final-Image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.clang-format" beforeDir="false" afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/waldo_det.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template_matching.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/template_matching.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template_matching2.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +87,7 @@
       <workItem from="1604520655512" duration="870000" />
       <workItem from="1604985015681" duration="438000" />
       <workItem from="1604985469223" duration="951000" />
-      <workItem from="1604986432994" duration="1357000" />
+      <workItem from="1604986432994" duration="1525000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via git, adding template function">
       <created>1577897855526</created>
