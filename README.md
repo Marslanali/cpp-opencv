@@ -18,7 +18,7 @@ This repository is C++ implementation of Template Matching with OpenCV. A workin
 
 * [OpenCV](https://www.mlpack.org/)  Version 3.17.5
 
-* [Armadillo](http://arma.sourceforge.net/download.html) Version 10.1.1   
+* [Armadillo](http://arma.sourceforge.net/download.html)  Version 10.1.1   
 
 ## Dependencies Installation
 
@@ -111,7 +111,9 @@ $ ./template_matching
 
 ## References
 
-[Template Matching](https://www.researchgate.net/publication/308020680_The_k-means_clustering_technique_General_considerations_and_implementation_in_Mathematica/link/584dd9be08aeb989252647ac/download)
+[Template Matching1](http://www.cs.toronto.edu/~fidler/slides/2019/CSC420/lecture2.pdf)
+[Template Matching2](https://docs.opencv.org/3.4/de/da9/tutorial_template_matching.html)
+
 
 ## To-Do List
 

@@ -12,40 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6b95c9c-df79-4573-87c5-e142ea71a207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/template-matching.dir/src/template_matching.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/template-matching" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/clutter2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/waldo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/template_matching2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Final-Image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clang-format" beforeDir="false" afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/waldo_det.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template_matching.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/template_matching.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template_matching2.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -67,7 +47,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.has.clang-format" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cpp-networks-configuration-api" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,7 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager">
     <configuration name="template-matching" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="template_matching_opencv" TARGET_NAME="template-matching" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="template_matching_opencv" RUN_TARGET_NAME="template-matching">
@@ -111,6 +92,10 @@
       <workItem from="1604482798012" duration="1673000" />
       <workItem from="1604495522883" duration="4182000" />
       <workItem from="1604515524484" duration="967000" />
+      <workItem from="1604520655512" duration="870000" />
+      <workItem from="1604985015681" duration="438000" />
+      <workItem from="1604985469223" duration="951000" />
+      <workItem from="1604986432994" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via git, adding template function">
       <created>1577897855526</created>
@@ -184,21 +169,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="adding additional files" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1283" height="178" key="GridCell.Tab.0.bottom" timestamp="1604516491573">
-      <screen x="41" y="21" width="1325" height="747" />
+    <state x="463" y="133" width="424" height="479" key="FileChooserDialogImpl" timestamp="1604986465959">
+      <screen x="0" y="21" width="1366" height="708" />
     </state>
+    <state x="463" y="133" width="424" height="479" key="FileChooserDialogImpl/0.21.1366.708@0.21.1366.708" timestamp="1604986465959" />
+    <state x="490" y="139" width="424" height="479" key="FileChooserDialogImpl/41.21.1325.747@41.21.1325.747" timestamp="1604520802306" />
+    <state width="1324" height="166" key="GridCell.Tab.0.bottom" timestamp="1604987307241">
+      <screen x="0" y="21" width="2732" height="708" />
+    </state>
+    <state width="1324" height="166" key="GridCell.Tab.0.bottom/0.21.2732.708@0.21.2732.708" timestamp="1604987307241" />
     <state width="1283" height="178" key="GridCell.Tab.0.bottom/41.21.1325.747@41.21.1325.747" timestamp="1604516491573" />
-    <state width="1283" height="178" key="GridCell.Tab.0.center" timestamp="1604516491572">
-      <screen x="41" y="21" width="1325" height="747" />
+    <state width="1324" height="166" key="GridCell.Tab.0.center" timestamp="1604987307239">
+      <screen x="0" y="21" width="2732" height="708" />
     </state>
+    <state width="1324" height="166" key="GridCell.Tab.0.center/0.21.2732.708@0.21.2732.708" timestamp="1604987307239" />
     <state width="1283" height="178" key="GridCell.Tab.0.center/41.21.1325.747@41.21.1325.747" timestamp="1604516491572" />
-    <state width="1283" height="178" key="GridCell.Tab.0.left" timestamp="1604516491572">
-      <screen x="41" y="21" width="1325" height="747" />
+    <state width="1324" height="166" key="GridCell.Tab.0.left" timestamp="1604987307237">
+      <screen x="0" y="21" width="2732" height="708" />
     </state>
+    <state width="1324" height="166" key="GridCell.Tab.0.left/0.21.2732.708@0.21.2732.708" timestamp="1604987307237" />
     <state width="1283" height="178" key="GridCell.Tab.0.left/41.21.1325.747@41.21.1325.747" timestamp="1604516491572" />
-    <state width="1283" height="178" key="GridCell.Tab.0.right" timestamp="1604516491572">
-      <screen x="41" y="21" width="1325" height="747" />
+    <state width="1324" height="166" key="GridCell.Tab.0.right" timestamp="1604987307240">
+      <screen x="0" y="21" width="2732" height="708" />
     </state>
+    <state width="1324" height="166" key="GridCell.Tab.0.right/0.21.2732.708@0.21.2732.708" timestamp="1604987307240" />
     <state width="1283" height="178" key="GridCell.Tab.0.right/41.21.1325.747@41.21.1325.747" timestamp="1604516491572" />
+    <state x="192" y="21" width="982" height="708" key="SettingsEditor" timestamp="1604985846696">
+      <screen x="0" y="21" width="1366" height="708" />
+    </state>
+    <state x="192" y="21" width="982" height="708" key="SettingsEditor/0.21.1366.708@0.21.1366.708" timestamp="1604985846696" />
+    <state x="1666" y="21" width="1066" height="708" maximized="true" key="dock-window-1" timestamp="1604987649606">
+      <screen x="0" y="21" width="2732" height="708" />
+    </state>
+    <state x="1666" y="21" width="1066" height="708" maximized="true" key="dock-window-1/0.21.2732.708@0.21.2732.708" timestamp="1604987649606" />
   </component>
 </project>
