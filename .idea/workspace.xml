@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="template_matching_opencv" targetName="template-matching" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -12,14 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6b95c9c-df79-4573-87c5-e142ea71a207" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template_matching.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/template_matching.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -40,7 +38,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cpp-networks-configuration-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,13 +47,6 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
-  </component>
-  <component name="RunManager">
-    <configuration name="template-matching" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="template_matching_opencv" TARGET_NAME="template-matching" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="template_matching_opencv" RUN_TARGET_NAME="template-matching">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -88,6 +79,7 @@
       <workItem from="1604985015681" duration="438000" />
       <workItem from="1604985469223" duration="951000" />
       <workItem from="1604986432994" duration="1525000" />
+      <workItem from="1611068088918" duration="580000" />
     </task>
     <task id="LOCAL-00001" summary="first commit via git, adding template function">
       <created>1577897855526</created>
@@ -194,5 +186,9 @@
       <screen x="0" y="21" width="2732" height="708" />
     </state>
     <state x="1666" y="21" width="1066" height="708" maximized="true" key="dock-window-1/0.21.2732.708@0.21.2732.708" timestamp="1604987649606" />
+    <state x="346" y="48" width="672" height="678" key="search.everywhere.popup" timestamp="1611068363261">
+      <screen x="0" y="21" width="1366" height="706" />
+    </state>
+    <state x="346" y="48" width="672" height="678" key="search.everywhere.popup/0.21.1366.706@0.21.1366.706" timestamp="1611068363261" />
   </component>
 </project>

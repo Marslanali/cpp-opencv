@@ -1,4 +1,9 @@
-// Created by arslan on 3/12/19.
+/**
+ * @brief Template Matching using OpenCV C++ Library
+ * @author Arslan Ali
+ * @Rerefences:
+ * @date 3/12/19 -- Revised 18/01/2021
+ */
 
 #include <armadillo>
 #include <iostream>
@@ -7,15 +12,20 @@
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-// template function for converting openCV Mat to Armadillo Mat
+/**
+ * @brief Template function for converting openCV Mat to Armadillo Mat
+ * @tparam T
+ * @param opencv_mat
+ * @return arma::Mat<T>
+ */
 template <typename T>
 arma::Mat<T> opencv_to_arma2(const cv::Mat& opencv_mat)
 {
   arma::Mat<T> arma_mat(opencv_mat.rows, opencv_mat.cols);
 
-  for (int32_t i = 0; i < opencv_mat.rows; ++i)
+  for (size_t i = 0; i < opencv_mat.rows; ++i)
   {
-    for (int32_t j = 0; j < opencv_mat.cols; ++j)
+    for (size_t j = 0; j < opencv_mat.cols; ++j)
     {
       arma_mat(i, j) = (T)opencv_mat.at<uchar>(i, j);
     }
@@ -24,6 +34,12 @@ arma::Mat<T> opencv_to_arma2(const cv::Mat& opencv_mat)
   return arma_mat;
 }
 
+/**
+ * main function
+ * @param argc  Total number of command line arguments
+ * @param argv  Pointer to store command line arguments
+ * @return 0
+ */
 int main(int argc, char** agrv)
 {
   cv::Mat input_image, input_filter;
@@ -89,18 +105,18 @@ int main(int argc, char** agrv)
 
   // arma_gray_scale_filter = opencv_to_arma2<double>(gray_scale_filter);
 
-  for (int32_t i = 0; i < gray_scale_image.rows; i++)
+  for (size_t i = 0; i < gray_scale_image.rows; i++)
   {
-    for (int32_t j = 0; j < gray_scale_image.cols; j++)
+    for (size_t j = 0; j < gray_scale_image.cols; j++)
     {
       // cv::Vec3b pixelColor = testData.at<cv::Vec3b>(i);
       arma_gray_scale_image(i, j) = (double)gray_scale_image.at<uchar>(i, j);
     }
   }
 
-  for (int32_t i = 0; i < gray_scale_filter.rows; i++)
+  for (size_t i = 0; i < gray_scale_filter.rows; i++)
   {
-    for (int32_t j = 0; j < gray_scale_filter.cols; j++)
+    for (size_t j = 0; j < gray_scale_filter.cols; j++)
     {
       arma_gray_scale_filter(i, j) = (double)gray_scale_filter.at<uchar>(i, j);
     }
@@ -118,17 +134,17 @@ int main(int argc, char** agrv)
 
   // final_image = arma_to_opencv<uchar>(arma_mat_filter);
 
-  for (int32_t i = 0; i < gray_scale_image.rows; ++i)
+  for (size_t i = 0; i < gray_scale_image.rows; ++i)
   {
-    for (int32_t j = 0; j < gray_scale_image.cols; ++j)
+    for (size_t j = 0; j < gray_scale_image.cols; ++j)
     {
       image.at<uchar>(i, j) = (uchar)arma_gray_scale_image(i, j);
     }
   }
 
-  for (int32_t i = 0; i < gray_scale_filter.rows; ++i)
+  for (size_t i = 0; i < gray_scale_filter.rows; ++i)
   {
-    for (int32_t j = 0; j < gray_scale_filter.cols; ++j)
+    for (size_t j = 0; j < gray_scale_filter.cols; ++j)
     {
       filter.at<uchar>(i, j) = (uchar)arma_gray_scale_filter(i, j);
     }
