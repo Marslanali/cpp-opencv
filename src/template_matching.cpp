@@ -1,8 +1,9 @@
 /**
- * @brief Template Matching using OpenCV C++ Library
- * @author Arslan Ali
- * @Rerefences:
- * @date 3/12/19 -- Revised 18/01/2021
+ * @brief  This file is part of Template Matching Implementation using OpenCV C++ Library
+ * @file  template_matching.cpp
+ * @date  3/12/19 -- Revised 18/01/2021
+ * @copyright
+ * @author  Arslan Ali  <marslanali800@gmail.com>
  */
 
 #include <armadillo>
